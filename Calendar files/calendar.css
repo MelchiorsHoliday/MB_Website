@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url("/Users/milesbrass/Documents/Coding/Codecademy/Websites/Images/Icon.jpeg"); */
+    background-size: cover;
+    background-color: bisque;
+}
+
+/* Header box */
+    header {
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        padding-bottom: 1rem;
+    }
+
+/* Years box RED*/
+    #year_set {
+        font-family: 'Courier New', Courier, monospace;
+        border: 2px solid red;
+        display: flex;
+        justify-content: space-evenly;
+        height: 8rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+    }
+
+
+    .year_squares {
+        display: flex;
+        border: 5px solid black;
+        flex-grow: 2;
+        text-align: center;
+        writing-mode: vertical-lr;
+        justify-content:center;
+    }
+
+    .year_squares p {
+        /* border: solid 1px green; */
+        text-align: center;
+        margin: 0 auto;
+        font-size: 2.2rem;
+        transform: rotate(290deg);
+    }
+/* Goals Subsection */
+    
+    #Goals {
+        border: 3px solid orange;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .Gsubsections {
+        border: 2px solid blue;
+        max-width: fit-content;
+        min-width: 6rem;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+#middle_section {
+    border: 2px solid grey;
+    display: flex;
+}
+
+#middle_section .first_part_middle {
+    border: 3px solid red;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+#middle_section h3 {
+    justify-content: center;
+    border: 2px solid black;
+    min-width: 20rem;
+    
+    
+
+}
+
+#middle_section #table_1 {
+    border: 1px solid;
+
+}
