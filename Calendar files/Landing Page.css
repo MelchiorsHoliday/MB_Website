@@ -7,6 +7,46 @@ font-family: 'Courier New', Courier, monospace;
 background-image: url('Images/istockphoto-1164419333-170667a.webp');
 background-repeat: repeat;
 }
+
+/* CURSOR */
+
+html {
+    cursor:none;
+}
+
+.custom-cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index:5;
+}
+
+.site-wide {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+.site-wide .pointer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: red;
+    transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
+}
+
+.site-wide.active .pointer {
+    width: 20px;
+    height: 20px;
+
+}
+
 /* BLACK */
 #all_box {
     /* border: 2px solid black; */
