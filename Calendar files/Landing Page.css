@@ -12,6 +12,7 @@ background-repeat: repeat;
 
 html {
     cursor:none;
+
 }
 
 .custom-cursor {
@@ -19,7 +20,7 @@ html {
     top: 0;
     left: 0;
     display: none;
-    z-index:5;
+    /* z-index:1; */
 }
 
 .site-wide {
