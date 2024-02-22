@@ -11,6 +11,7 @@ background-repeat: repeat;
 /* CURSOR */
 
 html {
+    cursor:crosshair;
     cursor:none;
 
 }
@@ -21,6 +22,7 @@ html {
     left: 0;
     display: none;
     /* z-index:1; */
+    pointer-events: none;
 }
 
 .site-wide {
@@ -103,6 +105,20 @@ html {
      min-height: 30rem; */
      z-index: -1;
      transform: rotate(91deg);
+}
+
+#paper2 {
+    /* border: 4px solid blue; */
+    position:absolute;
+    top: 10%;
+    height: 100%;
+    width:auto;
+    /* max-width: 40rem;
+    min-width: 40rem;
+    max-height: 60rem;
+    min-height: 30rem; */
+    z-index: -1;
+    transform: rotate(89deg);
 }
 
 .folder_titles {
@@ -198,3 +214,26 @@ html {
     /* text-transform:lowercase; */
 }
 
+.Coding_experience {
+    /* border: 4px solid blue; */
+    position:absolute;
+    top: 30%;
+    right:12%;
+    left: 12%;
+    height: 100%;
+    width:auto;
+    transform:rotate(1deg);
+    text-align: justify;
+}
+
+.Coding_experience2 {
+    /* border: 4px solid blue; */
+    position:absolute;
+    top: 30%;
+    right:12%;
+    left: 12%;
+    height: 100%;
+    width:auto;
+    transform:rotate(359deg);
+    text-align: justify;
+}
