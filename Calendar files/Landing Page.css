@@ -58,7 +58,7 @@ html {
 
 /* RED */
 #folder_box {
-    border: 5px solid red;
+    /* border: 5px solid red; */
     position: relative;
     display:flex;
     align-items: center;
@@ -134,7 +134,7 @@ html {
     /* border: 3px solid violet; */
     position:absolute;
     width:fit-content;
-    right: 46%;
+    right: 42%;
     top: 3%;
     font-weight: 800;
     font-size: large;
@@ -194,6 +194,7 @@ html {
     width:100%;
     height:auto;
     text-align: center;
-    min-height: 60%;
+    min-height: 70%;
+    /* text-transform:lowercase; */
 }
 

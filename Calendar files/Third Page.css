@@ -58,7 +58,7 @@ html {
     
     /* RED */
     #folder_box {
-        border: 5px solid red;
+        /* border: 5px solid red; */
         position: relative;
         display:flex;
         align-items: center;
@@ -134,7 +134,7 @@ html {
         /* border: 3px solid violet; */
         position:absolute;
         width:fit-content;
-        right: 46%;
+        right: 41%;
         top: 3%;
         font-weight: 800;
         font-size: large;
@@ -178,23 +178,6 @@ html {
         /* text-decoration: none; */
     }
     
-    #menu {
-        align-content: flex-end;
-        /* border: 1px solid orange; */
-        height:60%;
-        position: relative;
-        width: 75%;
-        top: 30%;
-        left: 12%;
-        text-align: center;
-        transform: rotate(0deg);
-    }
     
-    #menu_table {
-        width:100%;
-        height:auto;
-        text-align: center;
-        min-height: 60%;
-    }
     
     
