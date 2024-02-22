@@ -21,21 +21,41 @@ function TrackCursor(evt) {
     site_wide_cursor.style.transform = `translate(${evt.clientX - w/2}px, ${evt.clientY -h/2}px)`;
 };
 
-// Select the image element
-const glidingImage = document.getElementById('photo_clip');
+// POST-IT NOTE VANISH
+const image = document.getElementById('photo_clip2');
+let isMouseOver = false;
+let currentOpacity = 1; // Set initial opacity to fully visible
 
-// Add event listener for mouseenter
-glidingImage.addEventListener('mouseover', function() {
-  // Modify z-index, size, and position when mouse enters
-  glidingImage.style.zIndex = '10'; // Change z-index
-  glidingImage.style.transform = 'scale(1.2)'; // Increase size
-  glidingImage.style.position = 'relative'; // Change position if needed
+image.addEventListener('mouseover', function() {
+  isMouseOver = true;
+  decreaseOpacity();
 });
 
-// Add event listener for mouseleave
-glidingImage.addEventListener('mouseleave', function() {
-  // Revert changes when mouse leaves
-  glidingImage.style.zIndex = '1'; // Revert z-index
-  glidingImage.style.transform = 'scale(1)'; // Revert size
-  glidingImage.style.position = 'initial'; // Revert position if needed
+image.addEventListener('mouseout', function() {
+  isMouseOver = false;
+  increaseOpacity(); // When mouse leaves, start increasing opacity
 });
+
+function decreaseOpacity() {
+  if (!isMouseOver || currentOpacity <= 0) {
+    return; // Stop decreasing if mouse is not over the image or opacity is already 0
+  }
+  
+  currentOpacity -= 0.05; // Decrease opacity gradually
+  currentOpacity = Math.max(currentOpacity, 0); // Ensure opacity doesn't go below 0
+  image.style.opacity = currentOpacity;
+  
+  requestAnimationFrame(decreaseOpacity);
+}
+
+function increaseOpacity() {
+  if (isMouseOver || currentOpacity >= 1) {
+    return; // Stop increasing if mouse is over the image or opacity is already 1
+  }
+  
+  currentOpacity += 0.05; // Increase opacity gradually
+  currentOpacity = Math.min(currentOpacity, 1); // Ensure opacity doesn't exceed 1
+  image.style.opacity = currentOpacity;
+  
+  requestAnimationFrame(increaseOpacity);
+}

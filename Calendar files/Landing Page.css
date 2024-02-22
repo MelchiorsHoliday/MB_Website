@@ -52,6 +52,7 @@ html {
     width: 20px;
     height: 20px;
 
+
 }
 
 /* BLACK */
@@ -107,6 +108,16 @@ html {
     right: 10%; 
     top: 39%; 
     transform: rotate(15deg); 
+}
+
+#photo_clip3 {
+    z-index: 3;
+    height: 30%; 
+    width: auto; 
+    position: absolute;
+    right: 5%; 
+    top: 17%; 
+    transform: rotate(6deg); 
 }
 
 #paper {
